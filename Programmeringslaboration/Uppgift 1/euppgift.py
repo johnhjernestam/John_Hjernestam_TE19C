@@ -15,4 +15,4 @@ print("Antal punkter i cirkeln dividerat med antal simulerade punkter = ",n/(k+1
 # Räknar ut hur många procent av punkterna som hamnar i cirkeln genom att ta n (vilket är antal punkter som
 # hamnar i cirkeln) delat med k+1 (k är nitton vilket är varför + 1 är med då det är tjugo punkter) och till
 # sist gånger 100 för att få i svaret i procentenheter.
-    
+   

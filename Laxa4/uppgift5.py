@@ -11,5 +11,5 @@ while True:
     elif i < num:
                print('Gissa på ett högre tal')
     elif i > num:
-               print('Gissa på ett lägre tal')
+               print('Gissa på ett lägre tal') 
 
