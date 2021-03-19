@@ -9,4 +9,3 @@ lista = [1,2,3,4]
 
 print(lista*2)
 print(array1*2) # varje element multipliceras med 2
-
