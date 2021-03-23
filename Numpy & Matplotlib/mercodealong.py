@@ -13,4 +13,4 @@ print(x[index])
 
 plt.plot(x,f(x))
 plt.plot(x[index], störst, "r*")
-plt.show()
+plt.show() 

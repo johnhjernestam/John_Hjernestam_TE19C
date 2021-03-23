@@ -10,4 +10,4 @@ for i in range(antal_kast):
     utfall[kast-1] += 1
 
 print(f"Tärningskast: {utfall}")
-print(f"Sannolikhet: {utfall/antal_kast}")
+print(f"Sannolikhet: {utfall/antal_kast}") 
