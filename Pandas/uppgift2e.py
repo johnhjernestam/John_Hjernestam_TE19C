@@ -60,7 +60,7 @@ plt.bar(sysselsättningar , svar, width = 0.4)
 
 # Namn för y- och x-axeln osv.
 plt.title('Förvärvsarbetare')
-plt.xlabel('sysselsättningar')
+plt.xlabel('Sysselsättningar')
 plt.ylabel('Antal')
 plt.show()
 

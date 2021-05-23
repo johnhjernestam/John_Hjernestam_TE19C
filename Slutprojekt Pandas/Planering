@@ -1,0 +1,23 @@
+*** FÖR GODKÄNT ***
+
+(OM KLAR ---)
+
+---Godkänd planering--- 
+---Läsa in minst två olika dataset---
+---Rita minst två olika typer av grafer (ex linjediagram, cirkeldiagram) med matplotlib---
+---Graferna ska ha relevanta titlar, etiketter på axlarna, legends mm---
+---Kommenterad kod med relevanta kommentarer---
+---Ej plagierad kod (vissa mindre kodsnutt är okej givet att du källhänvisar och kan motivera att du förstått koden)---
+Godkänd utvärdering
+
+*** FÖR HÖGRE ÄN GODKÄNT ***
+
+---Kommenterad kod med korrekt användning av datavetenskaplig terminologi*---
+---Använda funktioner för att strukturera upp och återanvända kod*---
+---Variabelnamn ska vara beskrivande* ---
+---Skapa minst fyra unika diagram som visualiserar datan*---
+---Använda subplots för att visualisera flera diagram på ett figure-fönster (subplot)---
+---Använda plotly express eller plotly graph objects för att rita grafer---
+---Använda plotly dash för att skapa en dashboard---
+---Använda dash bootstrap components för att ge stil till din dashboard---
+---Lägg till interaktiva delar i din dashboard, ex att låta användaren få välja vad som ska visualiseras. (svår)---
