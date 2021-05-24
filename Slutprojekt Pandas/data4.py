@@ -3,7 +3,7 @@ import dash # Importerar dash
 import dash_core_components as dcc # Importerar dash core components som dcc 
 import dash_html_components as HTML # Importerar dash html components som HTML
 import pandas as pd # Importerar pandas som pd
-from dash.dependencies import Input, Output # 
+from dash.dependencies import Input, Output # Importerar input och output
 
 # Startar appen
 app = dash.Dash(__name__)
@@ -14,7 +14,7 @@ df_regional = pd.read_csv("CSV_Regional_Totals_Data.csv")
 df_gender = pd.read_csv("CSV_Gender_Data.csv")
 df_deaths = pd.read_csv("CSV_National_Daily_Deaths.csv")
 
-fig_deaths = px.line(df_deaths, y="National_Daily_Deaths", x="Date", title="Dagliga dödsfall") # Ett linjediagram som representerar dagliga dödsfall med plotly express
+fig_deaths = px.line(df_deaths, y="National_Daily_Deaths", x="Date", title="Dagliga dödsfall") # En variabel som sedan används för att representera dagliga dödsfall med plotly express
 
 # Här starat app layouten
 app.layout = HTML.Div(children=[
@@ -23,7 +23,7 @@ app.layout = HTML.Div(children=[
 
     dcc.Dropdown( # Dropdown är en mycket förekommande dash component som ger användaren alternativ på vad för typ av data som visas
         id = "drop_national",
-        options = [ # Det som står till höger om label är det användaren ser, det som står till höger om value är det som tas från dataframen
+        options = [ # Det som står till höger om "the key" label (value) är det användaren ser, det som står till höger om 'value' är det som tas från dataframen
             {'label': 'Antal fall baserat på åldersgrupp', 'value': 'Total_Cases'},
             {'label': 'Antal intensivvårdare baserat på åldersgrupp', 'value': 'Total_ICU_Admissions'},
             {'label': 'Antal dödsfall baserat på åldersgrupp', 'value': 'Total_Deaths'}
@@ -37,7 +37,7 @@ app.layout = HTML.Div(children=[
 
     dcc.Dropdown(
         id = "drop_regional",
-        options = [ # Det som står till höger om label är det användaren ser, det som står till höger om value är det som tas från dataframen
+        options = [ # Det som står till höger om "the key" label (value) är det användaren ser, det som står till höger om 'value' är det som tas från dataframen
             {'label': 'Antal fall baserat på region', 'value': 'Total_Cases'},
             {'label': 'Antal intensivvårdare baserat på region', 'value': 'Total_ICU_Admissions'},
             {'label': 'Antal dödsfall baserat på region', 'value': 'Total_Deaths'},
@@ -52,7 +52,7 @@ app.layout = HTML.Div(children=[
 
     dcc.Dropdown(
         id = "drop_gender",
-        options = [ # Det som står till höger om label är det användaren ser, det som står till höger om value är det som tas från dataframen
+        options = [ # Det som står till höger om "the key" label (value) är det användaren ser, det som står till höger om 'value' är det som tas från dataframen
             {'label': 'Antal fall baserat på kön', 'value': 'Total_Cases'},
             {'label': 'Antal intensivvårdare baserat på kön', 'value': 'Total_ICU_Admissions'},
             {'label': 'Antal dödsfall baserat på kön', 'value': 'Total_Deaths'},
