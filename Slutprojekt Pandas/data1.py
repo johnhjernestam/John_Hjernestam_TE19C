@@ -7,7 +7,7 @@ value_cases = [df["Total_Cases"][0],df["Total_Cases"][1]] # Tar ut specifik data
 value_icus = [df["Total_ICU_Admissions"][0],df["Total_ICU_Admissions"][1]] # Tar ut specifik data från csv:en, tar första indexet (alltså 0) och andra (alltså 1)
 value_deaths = [df["Total_Deaths"][0],df["Total_Deaths"][1]] # Tar ut specifik data från csv:en, tar första indexet (alltså 0) och andra (alltså 1) från 
 
-def diagram(value, row, column, position, title, labels): # En for loop som minskar antalet rader av kod, loopar igenom värde, rad, kolumn, position, titel och "etiketter"
+def diagram(value, row, column, position, title, labels): # En funktion som minskar antalet rader av kod, en funktion som har olika inparametrar som gör att man kan återanvända kod
     plt.subplot(row, column, position)
     plt.pie(value, labels = labels, autopct = '%1.1f%%', startangle=45, shadow = True, colors=['aqua', 'yellow'], explode=(0, 0.125)) # Startangle visar etiketten 45 grader från startposition, shadow=True ger skugga, explode ger utrymme mellan bitarna
     plt.title(title)
